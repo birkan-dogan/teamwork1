@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarusway</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="form">
+        <h1>Clarusway Survey Form</h1>
+        <p>Thank you for taking the time to help us improve the platform</p>
+    <form action="result.html" method="get">
+
+        <div class="input-box">
+            <label for="fname">Name</label><br>
+            <input type="text" name="fname" id="fname" placeholder="Enter your name">
+        </div>
+
+        <div class="input-box">
+            <label for="lname">Surname</label><br>
+            <input type="text" name="lname" id="lname" placeholder="Enter your surname">
+        </div>
+
+        <div class="input-box">
+            <label for="mail">Email</label><br>
+            <input type="email" name="mail" id="mail" placeholder="user@clarusway.com">
+        </div>
+        <div class="dropdown">
+            <label for="role" style="font-size: 1.5rem;">Which option best describes your current role?</label><br>
+            <select name="role" id="role">
+                <option value="" disabled selected>Select current role</option>
+                <option value="Student">Student</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Full Time Job">Full Time Job</option>
+                <option value="Part Time Job">Part Time Job</option>
+                <option value="Full Time Learner">Full Time Learner</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+            </select>
+        </div>
+
+        <div id="radio-type">
+            <label for="recommend" style="font-size: 1.5rem;">Would you recommend Clarusway to a friend</label><br>
+            <input type="radio" name="recommend" id="recommend">
+            <label for="recommend">Definitely, Yes</label><br>
+
+            <input type="radio" name="recommend" id="recommend" checked>
+            <label for="recommend">Maybe</label><br>
+
+            <input type="radio" name="recommend" id="recommend">
+            <label for="recommend">Not sure</label><br>
+
+            <input type="radio" name="recommend" id="recommend">
+            <label for="recommend">Definitely, No</label><br>
+        </div>
+
+        <div class="dropdown">
+            <label for="feature" style="font-size: 1.5rem;">What is your favorite feature of Clarusway?</label><br>
+            <select name="feature" id="feature">
+                <option value="" disabled selected>Select an option</option>
+                <option value="Courses">Courses</option>
+                <option value="Projects">Projects</option>
+                <option value="Community">Community</option>
+                <option value="Mentors">Mentors</option>
+            </select>
+        </div>
+
+        <div id="check-box">
+            <label for="suggest" style="font-size: 1.5rem;">What would you like to see improved? (Check all that apply)</label><br>
+            <input type="checkbox" id="suggest" name="suggest" value="front-end">
+            <label for="suggest">Front-end Projects</label><br>
+            <input type="checkbox" id="suggest" name="suggest" value="back-end">
+            <label for="suggest">Back-end Projects</label><br>
+            <input type="checkbox" id="suggest" name="suggest" value="data science">
+            <label for="suggest">Data Science</label><br>
+            <input type="checkbox" id="suggest" name="suggest" value="additional">
+            <label for="suggest">Additional Courses</label><br>
+        </div>
+
+        <div id="textarea">
+            <label for="comment" style="font-size: 1.5rem;">Any comments or suggestions?</label><br>
+            <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Enter your comment here... Thanks for your comments"></textarea>
+            <input type="submit" name="submit" value="Submit">
+        </div>
+
+        </form>
+    </div>
+</body>
+</html>
